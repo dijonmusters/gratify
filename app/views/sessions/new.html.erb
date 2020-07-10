@@ -1,7 +1,9 @@
-<h1>Login</h1>
-
-<%= form_tag '/login' do %>
-  <%= label_tag :username %>
-  <%= text_field_tag :username %>
-  <%= submit_tag "Login" %>
-<% end %>
+<div class="container">
+  <div class="login">
+    <p>login</p>
+    <%= form_tag '/login' do %>
+      <%= text_field_tag :username, "", class: 'login-username' %>
+      <%= submit_tag "Login" %>
+    <% end %>
+  </div>
+</div>
