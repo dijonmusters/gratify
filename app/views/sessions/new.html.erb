@@ -1,9 +1,9 @@
 <div class="container">
-  <div class="login">
-    <p>login</p>
+  <div class="grateful">
+    <div class="grateful-panel">
+    <p class="grateful-text">My username is</p>
     <%= form_tag '/login' do %>
-      <%= text_field_tag :username, "", class: 'login-username' %>
-      <%= submit_tag "Login" %>
-    <% end %>
+      <%= text_field_tag :username, "", class: 'grateful-input', autofocus: "true" %>
+    <%end%>
   </div>
 </div>

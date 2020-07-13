@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="grateful">
+    <div class="grateful-panel">
+      <p class="grateful-text">I am grateful for</p>
+      <%= form_tag '/' do %>
+        <%= text_field_tag :title, "", class: 'grateful-input', autofocus: "true" %>
+      <%end%>
+    </div>
+    <div class="grateful-today">
+      <ul class="grateful-today-list">
+        <% @todays_list.each do |item| %>
+          <li class="grateful-today-list-item">
+            <%= fa_icon "heart" %>
+            <%= item %>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</div>

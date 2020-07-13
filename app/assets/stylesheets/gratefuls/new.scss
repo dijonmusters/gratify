@@ -1,0 +1,53 @@
+.grateful {
+  &-panel {
+    display: flex;
+    line-height: 2;
+    font-size: 1.25rem;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &-text {
+    font-weight: 200;
+    margin: 0;
+    margin-right: 0.25rem;
+  }
+
+  &-input {
+    font-size: 100%;
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    color: inherit;
+
+    &:focus {
+      outline: none;
+      border-bottom: 2px solid white;
+    }
+  }
+
+  &-today {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 200;
+
+    &-list {
+      list-style: none;
+      width: max-content;
+      padding: 0;
+
+      &-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.25rem;
+
+        i {
+          margin-right: 0.25rem;
+          font-size: 0.5rem;
+        }
+      }
+    }
+  }
+
+}
